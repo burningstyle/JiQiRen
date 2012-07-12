@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BLANK	Play\displayMap.h	6;"	d
+BOB	Bob\bob.h	/^struct BOB{$/;"	s
+CLEAR_SCREEN	test.c	21;"	d	file:
+CLEAR_SCREEN	test.c	24;"	d	file:
+CreateBob	Bob\bob.h	/^struct BOB CreateBob (char direction,unsigned int localPoint_x,unsigned int localPoint_y )$/;"	f
+CreateMapStruct	Map\map.h	/^struct MAP CreateMapStruct ( unsigned int  maxH, unsigned int maxW)$/;"	f
+CreateOutputFormat	Play\displayMap.h	/^struct STRUCT_OUTPUT_FORMAT CreateOutputFormat($/;"	f
+FACE_DOWN	Bob\bob.h	23;"	d
+FACE_LEFT	Bob\bob.h	24;"	d
+FACE_RIGHT	Bob\bob.h	25;"	d
+FACE_UP	Bob\bob.h	22;"	d
+FreeArray	Map\map.h	/^void FreeArray(char ***mapArray,unsigned int maxH,unsigned int maxW)$/;"	f
+INTTOCHAR	Play\displayMap.h	5;"	d
+MAP	Map\map.h	/^struct MAP{$/;"	s
+OUTPUT_PLACE_HOLDER_DEFAULT_SIZE	Play\displayMap.h	4;"	d
+POINT	Basic\basic.h	/^struct POINT{$/;"	s
+POSITION_BEGIN_H	Map\map.h	21;"	d
+POSITION_BEGIN_W	Map\map.h	22;"	d
+STRUCT_OUTPUT_FORMAT	Play\displayMap.h	/^struct STRUCT_OUTPUT_FORMAT{$/;"	s
+direction	Bob\bob.h	/^	char 	direction;$/;"	m	struct:BOB
+localPoint	Bob\bob.h	/^	struct POINT 	localPoint;$/;"	m	struct:BOB	typeref:struct:BOB::POINT
+main	test.c	/^int main (int argc, char *argv[])$/;"	f
+mapArray	Map\map.h	/^	char	  **mapArray;$/;"	m	struct:MAP
+mapPlaceHolder	Play\displayMap.h	/^	char mapPlaceHolder;$/;"	m	struct:STRUCT_OUTPUT_FORMAT
+maxH	Map\map.h	/^	unsigned  int maxH;$/;"	m	struct:MAP
+maxW	Map\map.h	/^	unsigned  int maxW;$/;"	m	struct:MAP
+move	Play\displayMap.h	/^int move (struct MAP *map,struct BOB *bob)$/;"	f
+placeHolder	Play\displayMap.h	/^	char placeHolder[OUTPUT_PLACE_HOLDER_DEFAULT_SIZE];$/;"	m	struct:STRUCT_OUTPUT_FORMAT
+showMap	Play\displayMap.h	/^void showMap(struct MAP *map,struct BOB *bob){$/;"	f
+turnLeft	Bob\bob.h	/^void turnLeft (struct BOB *localBob)$/;"	f
+x	Basic\basic.h	/^	unsigned  int x;$/;"	m	struct:POINT
+y	Basic\basic.h	/^	unsigned  int y;$/;"	m	struct:POINT

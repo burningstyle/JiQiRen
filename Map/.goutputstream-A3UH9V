@@ -1,0 +1,54 @@
+/*
+ * =====================================================================================
+ *
+ *       Filename:  map.h
+ *
+ *    Description:  
+ *
+ *        Version:  1.0
+ *        Created:  2012/2/15 20:17:01
+ *       Revision:  none
+ *       Compiler:  gcc
+ *
+ *         Author:  BurningStyle (), 
+ *   Organization:  
+ *
+ * =====================================================================================
+ */
+
+//#include    "../Basic/basic.h"
+#include	<stdlib.h>
+#define		POSITION_BEGIN_H	0
+#define		POSITION_BEGIN_W	0
+#define		BLANK			'.'
+
+
+void FreeArray(char ***mapArray,unsigned int maxH,unsigned int maxW);
+
+struct MAP{
+	char	  **mapArray;
+	unsigned  int maxH;
+	unsigned  int maxW;
+};
+
+
+struct MAP CreateMapStruct ( unsigned int  maxH, unsigned int maxW)
+{
+      char  **ppiHead = NULL;   //保存二维数据的头指针
+      
+      struct MAP map={NULL,0,0};
+
+      unsigned int  h = 0;   
+ 
+      unsigned int  w = 0;   
+    
+      ppiHead = (char **)malloc(sizeof(char *)*(maxH+1));  //为头指针开辟一个数据空间
+     
+      for(h=0;h<maxH+1;h++){   //加1是因为要显示横纵坐标要各占一行与一列	
+	
+      	      ppiHead[h]=(char *)malloc(sizeof(char)*(maxW+1));  //每一行单独分配空间
+      
+      }
+     
+     map.mapArray=ppiHead;
+     //
